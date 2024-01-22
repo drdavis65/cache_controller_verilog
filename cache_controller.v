@@ -1,9 +1,18 @@
 module cache_controller(
     // Inputs/Outputs for interfacing with CPU and main memory
-    input clk, input reset, input [31:0] cpu_address, input [31:0] cpu_data_in, 
-    input cpu_read, input cpu_write, output reg [31:0] cpu_data_out, 
-    output reg cache_hit, output reg [31:0] mem_address, output reg [31:0] mem_data_in, 
-    input [31:0] mem_data_out, output reg mem_read, output reg mem_write
+    input clk, 
+    input reset, 
+    input [31:0] cpu_address, 
+    input [31:0] cpu_data_in, 
+    input cpu_read, 
+    input cpu_write, 
+    output reg [31:0] cpu_data_out, 
+    output reg cache_hit, 
+    output reg [31:0] mem_address, 
+    output reg [31:0] mem_data_in, 
+    input [31:0] mem_data_out, 
+    output reg mem_read, 
+    output reg mem_write
 );
 
 // Cache configuration parameters
